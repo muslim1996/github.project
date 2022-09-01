@@ -1,0 +1,276 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width:80%;
+    height: 200px;
+    margin:0 auto;
+}
+
+.menu{
+    text-align: center;
+    width:100%;
+    background:#000000;
+    font-size: 15px;
+    
+    
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    position:relative;
+    padding:25px 0;
+}
+
+.menu ul li a{
+    display: inline-block;
+    padding:10px 20px;
+    text-decoration: none;
+    color:#B6A7A7;
+    font-weight: bold;
+}
+.menu ul li a:hover{
+    color:#fff;
+}
+.menu ul .submenu{
+    position: absolute;
+    top: 100%;
+    left: 2px;
+    background: #373735;
+    width: 206px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.menu ul .submenu li{
+    padding:0;
+    display: block;
+    border-bottom:1px solid #B6A7A7;
+}
+
+.menu ul .submenu li:hover{
+    transition: ease 0.5s all;
+    background: #3D71D7;
+    border-bottom: none;
+}
+
+.menu ul .submenu li:first-child{
+    border-top: 4px solid #3D71D7;
+}
+
+.menu .submenu .submenu-2{
+    position: absolute;
+    left: 206px;
+    top:0;
+    width: 206px;
+    background: #373735;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu ul li:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+}
+.menu .submenu .sb-m:hover .submenu-2{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.right-angel{
+    margin-left: 102px;
+}
+
+
+/* **********************************************
+                Banner Section
+************************************************ */
+.banner{
+    width: 100%;
+    height: 85vh;
+    padding-top:200px;
+    background-image:url(../images/young-mens.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+
+}
+.banner h1{
+    display:inline;
+    background:#fff;
+    color:black;
+    padding:10px;
+    margin-bottom:100px;
+    text-align: center;
+
+}
+.banner p{
+    margin-top:25px !important;
+    width:80%;
+    padding:2px;
+    margin:auto;
+    font-size: 20px;
+    background: #fff;
+    color:black;
+    text-align: center;
+}
+
+.banner .btn{
+    display: inline-block;
+    padding:10px 20px;
+    background: red;
+    color:#fff;
+    text-decoration: none;
+    margin-top:30px;
+}
+
+.banner .btn:hover{
+    background: #fff;
+    border:1px solid red;
+    color:black;
+}
+
+.outside-list-style{
+    padding:30px 0;
+    margin:20px 0;
+    border:1px solid #cfbdbd;
+    text-align: center;
+    list-style-position: outside;
+}
+
+.outside-list-styl h1{
+    margin-bottom: 17px;
+}
+
+.outside-list-style li{
+    padding: 20px;
+    text-align: center;
+}
+
+.outside-list-style-2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0px 7px 16px #F5F8FB;
+}
+
+.outside-list-styl-2 h1{
+    margin-bottom: 17px;
+}
+
+.outside-list-style-2 ul li{
+    padding:20px;
+    text-align: center;
+}
+
+/* ***************************************
+                Form section
+**************************************** */
+.form-section{
+    width:100%;
+    height: 150px;
+    text-align: center;
+    background: #F2F2F2;
+    line-height: 100px;
+    position: relative;
+    margin:0 auto;
+    display: flex;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-section input[type="text"] {
+    width: 60%;
+    padding: 15px 13px;
+    border: none;
+    border-bottom: 2px solid red;
+    outline: none;
+    background: #fff;
+    position: absolute;
+    top: 52px;
+    left: 120px;
+
+}
+
+input[type="submit"] {
+    width: 15%;
+    padding: 16px 0;
+    border: none;
+    outline: none;
+    background: #FF0000;
+    position: absolute;
+    top: 52px;
+    left: 709px;
+    text-align: center;
+    color:#fff;
+  
+}
+.list-style-all-content{
+    margin-top:40px;
+    border:6px dotted #F2F2F2;
+    padding:50px 0;
+}
+
+.list-style-all-content h2{
+    text-align: center;
+    margin-bottom: 10px;
+   
+
+}
+.list-style-type{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.list-style-type .list-style-roman ul{
+    list-style: lower-roman;
+}
+.list-style-type .list-style-square ul{
+    list-style:square;
+}
+.list-style-type .list-style-alpha ul{
+    list-style:lower-alpha;
+}
+.fotter{
+    width: 100%;
+    text-align:center;
+    padding:20px 0;
+    margin-top:15px;
+    background: #000000;
+    color:#fff;
+}
+.fotter p{
+    margin-bottom:15px;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    list-style: none;
+    width: 30px;
+    height: 30px;
+    margin-left:10px;
+    background: red;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #5FA7FD;
+    
+}
+.footer-menu ul li a{
+    color:#000000;
+}
+.footer-menu ul li:hover{
+    background: #fff;
+}
